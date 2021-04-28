@@ -39,7 +39,7 @@ class Scrapper
     f.close
   end
 
-  # Save the emails to a google spreadcheet in Google Drive
+  # Save the emails to a google spreadsheet in Google Drive
   def save_as_spreadsheet
     session = GoogleDrive::Session.from_config("config.json")
     ws = session.spreadsheet_by_url('https://docs.google.com/spreadsheets/d/1qFESCOr8Gr1ytis8VNEg5hlJZLTLQxs51D1Lpnz53Uk/edit#gid=0').worksheets[0]
